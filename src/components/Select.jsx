@@ -6,7 +6,7 @@ export function Select({title, options}) {
             <option value="" disabled hidden>{title}</option>
             {options.map(option => <option key={option} value={option}>{option}</option>)}
         </select>
-        <div className="absolute flex-center inset-y-0 right-0">
+        <div className="absolute flex-center inset-y-0 right-0 pointer-events-none">
             <IoIosArrowDown />
         </div>
     </div>)

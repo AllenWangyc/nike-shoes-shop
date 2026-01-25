@@ -10,7 +10,7 @@ export const SHOE_LIST = [
     {
         id: 1,
         title: "Nike Air Max 270",
-        description: "The Nike Air Max 270 is a liftstyle shoe that's sure to turn heads with ites vibrant color gradient",
+        description: "The Nike Air Max 270 is a liftstyle shoe that's sure to turn heads with ites vibrant color gradient.",
         src: nike1,
         price: 160,
         className: "bg-[#EEFFA4]"
@@ -18,7 +18,7 @@ export const SHOE_LIST = [
     {
         id: 2,
         title: "Nike Air Vapor",
-        description: "The Nike Air Vapor is a sleek and stylish shoe that's perfect for an",
+        description: "The Nike Air Vapor is a sleek and stylish shoe that's perfect for any occasion. It's the perfect shoe for any active lifestyle.",
         src: nike2,
         price: 100,
         className: "bg-[#DDCEFD]"
@@ -26,7 +26,7 @@ export const SHOE_LIST = [
     {
         id: 3,
         title: "Nike Air Max 2090",
-        description: "The Nike Air Max 2090 is shoe that's both stylish and comportable",
+        description: "The Nike Air Max 2090 is shoe that's both stylish and comfortable. It's the perfect shoe for any fashion-forward individual.",
         src: nike3,
         price: 150,
         className: "bg-[#DAFFA2]"
@@ -34,7 +34,7 @@ export const SHOE_LIST = [
     {
         id: 4,
         title: "Nike Air Blazer",
-        description: "The Nike Air Blazer is a classsic shoe that's perfect for any casual",
+        description: "The Nike Air Blazer is a classic shoe that's perfect for any casual occasion. It's the perfect shoe for any laid-back individual.",
         src: nike4,
         price: 110,
         className: "bg-[#FCC4EA]"
