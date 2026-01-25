@@ -10,4 +10,4 @@ export function Select({title, options}) {
             <IoIosArrowDown />
         </div>
     </div>)
-}
+} 
