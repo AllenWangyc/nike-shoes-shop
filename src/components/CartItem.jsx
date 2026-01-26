@@ -28,12 +28,12 @@ export function CartItem({ item }) {
             <div className="flex justify-between pl-32">
                 <div className="flex space-x-6">
                     <div>
-                        <div className="font-bold">SIZE</div>
-                        <Select options={SIZES}/>
+                        <div className="font-bold" >SIZE</div>
+                        <Select options={SIZES} className={"w-16 p-1"}/>
                     </div>
                     <div>
                         <div className="font-bold">QTY</div>
-                        <Select options={QTY}/>
+                        <Select options={QTY} className={"w-16 p-1"}/>
                     </div>
                 </div>
                 
