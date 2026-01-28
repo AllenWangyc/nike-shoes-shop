@@ -6,7 +6,7 @@ export function CartItem({ item, onClickTrash }) {
     const { product, qty, size } = item
 
     return (
-        <div className="hover:bg-[#DAFFA2] cursor-pointer p-2 bg-gray-50 space-y-2 dark:bg-transparent dark:hover:bg-night-50">
+        <div className="hover:bg-[#DAFFA2] p-2 bg-gray-50 space-y-2 dark:bg-transparent dark:hover:bg-night-50">
             <div className="flex space-x-2">
                 {/* Image */}
                 <img src={product.src}
@@ -39,7 +39,10 @@ export function CartItem({ item, onClickTrash }) {
                     </div>
                 </div>
                 
-                <button onClick={() => onClickTrash(product.id)}>
+                <button 
+                    className="cursor-pointer"
+                    onClick={() => onClickTrash(product.id)}
+                >
                     <CiTrash size={25} className="text-black dark:text-white" />
                 </button>
             </div>
