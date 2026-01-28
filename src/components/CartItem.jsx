@@ -6,7 +6,7 @@ export function CartItem({ item }) {
     const { product, qty, size } = item
 
     return (
-        <div className="hover:bg-[#DAFFA2] cursor-pointer p-2 bg-gray-50 space-y-2 ">
+        <div className="hover:bg-[#DAFFA2] cursor-pointer p-2 bg-gray-50 space-y-2 dark:bg-transparent dark:hover:bg-night-50">
             <div className="flex space-x-2">
                 {/* Image */}
                 <img src={product.src}
@@ -14,7 +14,7 @@ export function CartItem({ item }) {
                 />
                 {/* Title and description */}
                 <div className="space-y-2">
-                    <div className="font-bold">
+                    <div className="font-bold dark:text-white">
                         {product.title}
                     </div>
                     <div className="text-sm text-gray-400">
@@ -22,7 +22,7 @@ export function CartItem({ item }) {
                     </div>
                 </div>
                 {/* Price */}
-                <div>
+                <div className="dark:text-white">
                     ${product.price}
                 </div>
             </div>
@@ -30,17 +30,17 @@ export function CartItem({ item }) {
             <div className="flex justify-between pl-32">
                 <div className="flex space-x-6">
                     <div>
-                        <div className="font-bold" >SIZE</div>
+                        <div className="font-bold dark:text-white" >SIZE</div>
                         <Select defaultValue={size} options={SIZES} className={"w-16 p-1 pl-2"}/>
                     </div>
                     <div>
-                        <div className="font-bold">QTY</div>
+                        <div className="font-bold dark:text-white">QTY</div>
                         <Select defaultValue={qty} options={QTY} className={"w-16 p-1 pl-2"}/>
                     </div>
                 </div>
                 
                 <button>
-                    <CiTrash size={25} className="text-black" />
+                    <CiTrash size={25} className="text-black dark:text-white" />
                 </button>
             </div>
         </div>
