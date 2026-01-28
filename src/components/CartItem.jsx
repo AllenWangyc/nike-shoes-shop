@@ -31,11 +31,11 @@ export function CartItem({ item }) {
                 <div className="flex space-x-6">
                     <div>
                         <div className="font-bold dark:text-white" >SIZE</div>
-                        <Select defaultValue={size} options={SIZES} className={"w-16 p-1 pl-2"}/>
+                        <Select defaultValue={size} options={SIZES} className={"w-16 p-1 pl-2"} value={size}/>
                     </div>
                     <div>
                         <div className="font-bold dark:text-white">QTY</div>
-                        <Select defaultValue={qty} options={QTY} className={"w-16 p-1 pl-2"}/>
+                        <Select defaultValue={qty} options={QTY} className={"w-16 p-1 pl-2"} value={qty}/>
                     </div>
                 </div>
                 

@@ -1,13 +1,15 @@
 import {IoIosArrowDown} from "react-icons/io"
 import { twMerge } from "tw-merge"
 
-export function Select({title=null, options, className, defaultValue}) {
+export function Select({title=null, options, className, onChange, value}) {
     return (<div className="relative dark:text-black">
         <select 
-            defaultValue={defaultValue || ""} 
+            value={value || ""}
             className={twMerge(
                 `w-24 appearance-none border border-gray-300 p-4 bg-white ${className}`
-            )}> 
+            )}
+            onChange={(e) => onChange(e.target.value)}
+        > 
             <option value="" disabled hidden>
                 {title}
             </option>

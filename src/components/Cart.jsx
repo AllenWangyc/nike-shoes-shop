@@ -1,4 +1,3 @@
-import { SHOE_LIST } from "../constant"
 import { CartItem } from "./CartItem"
 
 export function Cart({ cartItems }) {
