@@ -10,6 +10,8 @@ import { BiMoon, BiSun} from "react-icons/bi"
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+  const [currentShoe, setCurrentShoe] = useState(SHOE_LIST[0])
+
   const FAKE_CART_ITEMS = SHOE_LIST.map(shoe => {
     return {
       product: shoe,
@@ -37,8 +39,11 @@ function App() {
   return (
     <div className="p-10 xl:px-24 animate-fadeIn dark:bg-night">
       <Nav onClickShoppingBtn = {() => setIsSidebarOpen(true)} />
-      <ShoeDetail />
-      <NewArrivalSection items={SHOE_LIST}/>
+      <ShoeDetail shoe={currentShoe} />
+      <NewArrivalSection 
+        items={SHOE_LIST}
+        onClickCard={setCurrentShoe}
+      />
       <Sidebar isOpen={isSidebarOpen} 
         onClickClose={() => {setIsSidebarOpen(false)}}
       >
