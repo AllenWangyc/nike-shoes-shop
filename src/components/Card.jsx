@@ -1,9 +1,16 @@
-
 export function Card({ item, onClick }) {
+  const scrollToTop = () => {
+    window.scrollTo({top: 0, behavior: "smooth"})
+  }
+
   return (
     <div
       className={`${item.className} relative max-w-xl transform cursor-pointer transition hover:scale-105`}
-      onClick={() => onClick(item)}
+      onClick={() => {
+        onClick(item)
+        scrollToTop()
+      }}
+
     >
       <div className="p-8">
         <div className="text-2xl font-bold">{item.title}</div>
